@@ -1,0 +1,117 @@
+.task-assignment-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-assignment-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dropdown-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+  }
+  
+  .task-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .task-input-container input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .task-input-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-input-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .task-queue {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .task-queue h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .task-queue ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-queue li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .task-queue button {
+    padding: 5px 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-queue button:hover {
+    background-color: #0b7dda;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .task-input-container input {
+      max-width: 100%; /* Full width for smaller screens */
+    }
+  
+    .task-input-container, .dropdown-container {
+      flex-direction: column; /* Stack elements on smaller screens */
+    }
+  
+    .task-input-container button {
+      width: 100%; /* Full width button */
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,112 @@
+.supervisor-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .supervisor-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-wrap: wrap; /* Enables wrapping for smaller screens */
+    gap: 10px; /* Adds space between elements */
+    margin-bottom: 20px;
+    justify-content: center; /* Centers the content */
+  }
+  
+  .input-container input {
+    flex: 1 1 200px; /* Allows the inputs to grow and shrink */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 150px; /* Sets a minimum width */
+  }
+  
+  .input-container button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 100px; /* Allows the button to grow and shrink */
+    max-width: 120px; /* Sets a maximum width */
+  }
+  
+  .input-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto; /* Adds horizontal scrolling for small screens */
+  }
+  
+  .data-table th, .data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* Breaks long text */
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .data-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .data-table button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .data-table button:hover {
+    background-color: #0b7dda;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .input-container input, .input-container button {
+      flex: 1 1 100%; /* Makes inputs and button take full width */
+      max-width: 100%; /* Removes maximum width */
+    }
+  
+    .supervisor-container h1 {
+      font-size: 1.5rem; /* Smaller font size on small screens */
+    }
+  
+    .data-table th, .data-table td {
+      font-size: 0.9rem; /* Smaller text in the table on small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .supervisor-container {
+      padding: 15px; /* Reduces padding for smaller screens */
+    }
+  
+    .supervisor-container h1 {
+      font-size: 1.2rem; /* Smaller font size on very small screens */
+    }
+  }
+  

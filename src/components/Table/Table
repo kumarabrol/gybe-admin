@@ -1,0 +1,39 @@
+// Table.js
+import React from 'react';
+
+const Table = ({ data, columns, onAddRow }) => {
+  const handleAddRow = () => {
+    // Call the onAddRow prop with a new row object
+    const newRow = {}; // This should match the structure of your data
+    columns.forEach(column => {
+      newRow[column.accessor] = ''; // Initialize with empty strings or default values
+    });
+    onAddRow(newRow);
+  };
+
+  return (
+    <>
+      <table>
+        <thead>
+          <tr>
+            {columns.map((column, index) => (
+              <th key={index}>{column.header}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((row, rowIndex) => (
+            <tr key={rowIndex}>
+              {columns.map((column, columnIndex) => (
+                <td key={columnIndex}>{row[column.accessor]}</td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <button onClick={handleAddRow}>Add Row</button>
+    </>
+  );
+};
+
+export default Table;
